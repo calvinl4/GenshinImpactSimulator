@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.scss';
+import backGroundImage from './assets/background.png'
+import React, { useState } from 'react';
+
+
 
 function App() {
+
+  const [moneySpent, setmoneySpent] = useState(0);
+  const [averageCost5Star, setaverageCost5Star] = useState(0);
+  const [longest5StarDrought, setlongest5StarDrought] = useState(0);
+  const [longest4StarDrought, setlongest4StarDrought] = useState(0);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="background">
+      <img className="backgroundImage" src={backGroundImage}></img>
+      <div className="resultsRectangle" >
+        <h1>Results</h1>
+        <div className="statisticsRectangle">
+          <h3>Money Spent: ${moneySpent}</h3>
+          <h3>Average Cost per 5 star: ${averageCost5Star}</h3>
+          <h3>Longest 5 star drought: {longest5StarDrought}</h3>
+          <h3>Longest 4 star drought: {longest4StarDrought}</h3>
+        </div>
+
+        <h2>Last ten 5 Stars Pulled:</h2>
+
+      </div>
     </div>
   );
 }
