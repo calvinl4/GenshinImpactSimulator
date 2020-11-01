@@ -1,0 +1,41 @@
+.cardContainer {
+  width: 200px;
+  height: 335px;
+  border: 2px solid #4C9CFA;
+  background-color: #C2DEFF;
+}
+
+.titleText {
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+.weaponImage {
+  height: 120px;
+  width: 200px;
+  border-top: 2px solid #4C9CFA;
+  border-bottom: 2px solid #4C9CFA;
+}
+
+.weaponStats {
+  margin: 5px auto;
+  text-align: left;
+  font-weight:500;
+  font-size: 12px;
+  line-height: 15px;
+  width: 180px;
+  color: #000000;
+}
+
+.weaponDesc {
+  margin: 10px auto;
+  float: bottom;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  width: 180px;
+  color: rgba(0, 0, 0, 0.5);
+} 
+
