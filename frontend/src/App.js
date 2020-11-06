@@ -1,5 +1,6 @@
 import WeaponCard from "./components/weaponCard/weaponCard";
 import './App.scss';
+import CharCard from "./components/charCard/charCard";
 import backGroundImage from './assets/background.png'
 import intertwinedFateIcon from './assets/icons/intertwined_fate.png'
 import React, { useState } from 'react';
@@ -30,7 +31,6 @@ function App() {
         <div style={{ height: "30px" }}></div>
         <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
       </div>
-
       <div className="resultsRectangle" >
         <h1>Results</h1>
         <div className="statisticsRectangle">
@@ -54,6 +54,8 @@ function App() {
         <h3>x10</h3>
       </button>
     </div>
+    
+
   );
 }
 
