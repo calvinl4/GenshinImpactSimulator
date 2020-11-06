@@ -24,9 +24,7 @@ function App() {
           <h3>Longest 5 star drought: {longest5StarDrought}</h3>
           <h3>Longest 4 star drought: {longest4StarDrought}</h3>
         </div>
-
         <h2>Last ten 5 Stars Pulled:</h2>
-
       </div>
     </div>
   );
