@@ -1,6 +1,7 @@
 import WeaponCard from "./components/weaponCard/weaponCard";
 import './App.scss';
 import backGroundImage from './assets/background.png'
+import intertwinedFateIcon from './assets/icons/intertwined_fate.png'
 import React, { useState } from 'react';
 
 
@@ -13,17 +14,23 @@ function App() {
   const [longest4StarDrought, setlongest4StarDrought] = useState(0);
 
 
+  let on1WishButtonClick = () => {
+    setmoneySpent(moneySpent+1);
+  }
+
   return (
     <div className="App" id="background">
-     
-      <img className="backgroundImage" src={backGroundImage}></img>
-      <div>
-        <div style={{height: "30px"}}></div>
-        <div style={{display: "flex"}}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
 
-        <div style={{height: "30px"}}></div>
-        <div style={{display: "flex"}}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
+      <img className="backgroundImage" src={backGroundImage}></img>
+
+      <div>
+        <div style={{ height: "30px" }}></div>
+        <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
+
+        <div style={{ height: "30px" }}></div>
+        <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
       </div>
+
       <div className="resultsRectangle" >
         <h1>Results</h1>
         <div className="statisticsRectangle">
@@ -34,6 +41,18 @@ function App() {
         </div>
         <h2>Last ten 5 Stars Pulled:</h2>
       </div>
+
+      <button className="wishButton1" onClick = {on1WishButtonClick}>
+        <h2>Wish x1</h2>
+        <img src={intertwinedFateIcon}></img>
+        <h3>x1</h3>
+      </button>
+
+      <button className="wishButton10">
+        <h2>Wish x10</h2>
+        <img src={intertwinedFateIcon}></img>
+        <h3>x10</h3>
+      </button>
     </div>
   );
 }
