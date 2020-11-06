@@ -1,5 +1,6 @@
 import WeaponCard from "./components/weaponCard/weaponCard";
 import './App.scss';
+import CharCard from "./components/charCard/charCard";
 import backGroundImage from './assets/background.png'
 import React, { useState } from 'react';
 
@@ -24,6 +25,7 @@ function App() {
         <div style={{height: "30px"}}></div>
         <div style={{display: "flex"}}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
       </div>
+      
       <div className="resultsRectangle" >
         <h1>Results</h1>
         <div className="statisticsRectangle">
@@ -36,7 +38,16 @@ function App() {
         <h2>Last ten 5 Stars Pulled:</h2>
 
       </div>
+    <div style={{backgroundColor: "white"}}>
+    <div style={{marginTop: "500px"}}>
+        <CharCard></CharCard>
+      </div>
+      <div style={{marginTop: "500px"}}>
+        <CharCard></CharCard>
+      </div>
     </div>
+    </div>
+
   );
 }
 
