@@ -19,18 +19,30 @@ function App() {
     setmoneySpent(moneySpent+1);
   }
 
+
+  const images = []
+
+
   return (
     <div className="App" id="background">
 
       <img className="backgroundImage" src={backGroundImage}></img>
 
-      <div>
+      {/* <div>
         <div style={{ height: "30px" }}></div>
         <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
 
         <div style={{ height: "30px" }}></div>
         <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
+      </div> */}
+
+      <div>
+        <div style={{ height: "30px" }}></div>
+        <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
       </div>
+
+
+
       <div className="resultsRectangle" >
         <h1>Results</h1>
         <div className="statisticsRectangle">
