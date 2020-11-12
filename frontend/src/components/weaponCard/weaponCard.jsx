@@ -16,12 +16,17 @@ export const WeaponCard = (props) => {
         </p>
 
 
+
+
+
+
+
+
          <p className={"weaponDesc"}>
            {/* {props.weaponDesc} */}
           A sharp blade with extravagant carvings that somehow does not compromise on durability and shapness. It roars like a lion as it cuts through the air.
         </p>
       </div>
-
     </div>
   )
 }
