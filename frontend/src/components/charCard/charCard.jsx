@@ -1,6 +1,6 @@
 import React from "react";
 import "./charCard.scss"
-import exampleImage from "../../assets/characters/5Star/Character_Venti_Card.png"
+// import exampleImage from "../../assets/characters/5Star/Character_Venti_Card.png"
 import starIcon from "../../assets/icons/Icon_5_Stars.png"
 
 export const CharCard = (props) => {
@@ -8,7 +8,7 @@ export const CharCard = (props) => {
   // require(`${imagePath}`)
   return (
     <div>
-      <div className={"cardContainer"}>
+      {/* <div className={"cardContainer"}>
         <h1 className={"titleText"}>Venti</h1>
         <div className={"imageContainer"}>
           <img className={"charImage"} src={exampleImage} alt="charImage"></img>
@@ -25,7 +25,7 @@ export const CharCard = (props) => {
           </p>
         </div>
 
-      </div>
+      </div> */}
 
     </div>
   )
