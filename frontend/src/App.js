@@ -38,7 +38,7 @@ function App() {
 
       <div>
         <div style={{ height: "30px" }}></div>
-        <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="4_lions_roar.png"></WeaponCard></div>
+        <div style={{ display: "flex", position: "relative" }}><WeaponCard weaponImage="/weapons/sword/4Star/4_lions_roar.png"></WeaponCard></div>
       </div>
 
 
