@@ -7,7 +7,7 @@ export const WeaponCard = (props) => {
     <div>
       <div className={"cardContainer"}>
         <h1 className={"titleText"}>4 Star Weapon</h1>
-        <img className={"weaponImage"} src={process.env.PUBLIC_URL + props.weaponImage} alt="weaponImage"></img>
+        <img className={"weaponImage"} src={process.env.PUBLIC_URL + "/weapons/sword/4Star/" + props.weaponImage} alt="weaponImage"></img>
         <p className={"weaponStats"}>
           Bane of Fire and Thunder: - Increases DMG against enemies affected by Pyro or Electro by 20/25/30/35/40%.
           {/* {props.weaponStats} */}
